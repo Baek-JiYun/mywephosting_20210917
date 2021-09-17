@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video width="640px" height="360px"src="Skyscrapers - 80724.mp4" controls></video>
+    <br>
+    <h1>자동재생하고싶다면</h1>
+    <p>소리를 음소거해야 자동재생 가능</p>
+    <video width="640px" height="360px"src="Skyscrapers - 80724.mp4" controls autoplay muted></video>
+
+    <h1>동영상 썸네일 삽입하고 sourcw태그 넣어서 여러가지 확장자를 모두 올리고싶은경우</h1>
+    <!-- 해당 동영상의 썸네일을 미리 넣고, 동영상이 재생이 안될경우 대비 방법 -->
+    <video width="640px" height="360px" controls poster="landscape-5426755_1920.jpg">
+        <!-- 동영상 mp4확장자가 재생 안되면 webm확장자 동영상이 실행되게하기 -->
+        <source src="Skyscrapers - 80724.mp4" type="video/mp4">
+        <source src="Skyscrapers - 80724.wemb" type="video/wepm">
+    </video>
+</body>
+</html>
